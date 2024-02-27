@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container{
+    width: 70rem;
+    height: 40rem;
+    box-shadow: 1px 8px 8px 4px rgb(133, 131, 131);
+    background: linear-gradient(to bottom, rgb(206, 203, 203) 0%, rgb(206, 203, 203) 40%, white 40%, white 100%);
+    position: absolute;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#logo{
+    background-color: rgba(192, 184, 184, 0.671);
+    color: rgb(119, 112, 112);
+    padding: 7px 20px;
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    
+}
+
+#add-outline{
+    margin-top: -4rem;
+    background-color: rgb(8, 8, 95);
+    font-size: 1.5rem;
+    color: white;
+    padding: 4rem .4rem .5rem;
+    border-radius: 0 0 15px 15px;
+    transition: all 250ms linear;
+
+    &:hover{
+        cursor: pointer;
+        transform: translateY(.75rem);
+        color: navy;
+        background: aliceblue;
+    }
+
+    &:active{
+        scale: .9;
+    }
+}
+
+#person{
+    background-color: rgba(172, 168, 168, 0.671); 
+    color: white;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.right-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-menu > span,
+#down-arrow{
+    color: rgb(110, 104, 104); 
+}
+
+#down-arrow{
+    margin-left: -5px;
+    transition: all 250ms linear;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: rotate(360deg);
+    }
+}
+
+.circle{
+    aspect-ratio: 1;
+    height: 30rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 21rem;
+    top: 5rem;
+}
+
+img{
+    height: 12.5rem;
+    margin-top: -2.5rem;
+    user-select: none;
+}
+
+h4{
+    color: rgb(16, 16, 92);
+    padding-bottom: 15px;
+}
+
+p{
+    color:rgba(44, 42, 42, 0.671); 
+    padding: 3px 0;
+    font-size: .8rem;
+}
+
+.icon-container{
+    width: fit-content;
+    font-size: 1.25rem;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    color: rgb(100, 98, 98);
+    top: 5rem;
+    right: 6rem;
+
+     & *:hover{
+        cursor: pointer;
+        scale: 1.1;
+        color: blue;
+     }
+
+     & *:active{
+        scale: .9;
+     }
+}
+
+.my-boards{
+    color: rgb(100, 98, 98);
+    width: fit-content;
+    position: absolute;
+    left: 3rem;
+
+    >h3{
+        color: rgb(10, 10, 75);
+        font-size: 1.5rem;
+    }
+
+    >span{
+        font-size: .75rem;
+    }
+
+    b{
+        /* border: 1px solid red; */
+        font-size: 1.15rem;
+        position: relative;
+        bottom: 3px
+    }
+}
